@@ -1,4 +1,7 @@
 # Starter pipeline
+- task: KubernetesManifest@0
+  inputs:
+    action: 'deploy'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
